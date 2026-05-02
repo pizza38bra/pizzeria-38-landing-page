@@ -33,8 +33,8 @@ const Index = () => {
             <a href="#about" className="hover:text-[hsl(var(--brand-flame))] transition">Chi siamo</a>
             <a href="#contact" className="hover:text-[hsl(var(--brand-flame))] transition">Contatti</a>
           </nav>
-          <a href="#contact" className="hidden md:inline-block px-5 py-2 rounded-full text-sm font-semibold text-black" style={{ background: "var(--gradient-flame)" }}>
-            Ordina ora
+          <a href="tel:+390172751897" className="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold text-black" style={{ background: "var(--gradient-flame)" }}>
+            <Phone className="w-4 h-4" /> 0172 751897
           </a>
         </div>
       </header>
