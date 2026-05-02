@@ -64,8 +64,8 @@ const Index = () => {
               <a href="#menu" className="px-6 py-3 rounded-full font-semibold text-black" style={{ background: "var(--gradient-flame)", boxShadow: "var(--shadow-glow)" }}>
                 Scopri il menu
               </a>
-              <a href="#contact" className="px-6 py-3 rounded-full font-semibold border border-white/20 hover:border-[hsl(var(--brand-flame))] transition">
-                Prenota un tavolo
+              <a href="tel:+390172751897" className="px-6 py-3 rounded-full font-semibold border border-white/20 hover:border-[hsl(var(--brand-flame))] transition inline-flex items-center gap-2">
+                <Phone className="w-4 h-4" /> Chiama ora per la tua pizza
               </a>
             </div>
           </div>
