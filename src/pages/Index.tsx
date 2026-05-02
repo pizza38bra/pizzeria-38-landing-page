@@ -132,17 +132,21 @@ const Index = () => {
           <h2 className="font-[Bebas_Neue] text-5xl md:text-6xl">Vieni a trovarci</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {[
-            { icon: MapPin, title: "Dove siamo", text: "Bra, Piemonte" },
-            { icon: Clock, title: "Orari", text: "Mar - Dom\n18:00 — 22:30" },
-            { icon: Phone, title: "Prenota", text: "Chiamaci o scrivi su Facebook" },
-          ].map((c, i) => (
-            <div key={i} className="rounded-2xl p-8 text-center border border-white/10 hover:border-[hsl(var(--brand-flame))]/50 transition">
-              <c.icon className="w-8 h-8 mx-auto text-[hsl(var(--brand-flame))]" />
-              <h3 className="font-[Bebas_Neue] text-2xl mt-4">{c.title}</h3>
-              <p className="text-foreground/70 mt-2 whitespace-pre-line">{c.text}</p>
-            </div>
-          ))}
+          <a href="https://maps.google.com/?q=Viale+Industria+52,+12042+Bra+CN" target="_blank" rel="noopener" className="rounded-2xl p-8 text-center border border-white/10 hover:border-[hsl(var(--brand-flame))]/50 transition block">
+            <MapPin className="w-8 h-8 mx-auto text-[hsl(var(--brand-flame))]" />
+            <h3 className="font-[Bebas_Neue] text-2xl mt-4">Dove siamo</h3>
+            <p className="text-foreground/70 mt-2">Viale Industria, 52<br />12042 Bra (CN)</p>
+          </a>
+          <div className="rounded-2xl p-8 text-center border border-white/10">
+            <Clock className="w-8 h-8 mx-auto text-[hsl(var(--brand-flame))]" />
+            <h3 className="font-[Bebas_Neue] text-2xl mt-4">Orari</h3>
+            <p className="text-foreground/70 mt-2">Aperto fino alle 22:00<br />Chiama per conferma</p>
+          </div>
+          <a href="tel:+390172751897" className="rounded-2xl p-8 text-center border border-[hsl(var(--brand-flame))]/40 hover:border-[hsl(var(--brand-flame))] transition block" style={{ background: "hsl(var(--brand-charcoal))" }}>
+            <Phone className="w-8 h-8 mx-auto text-[hsl(var(--brand-flame))]" />
+            <h3 className="font-[Bebas_Neue] text-2xl mt-4">Chiama ora</h3>
+            <p className="text-[hsl(var(--brand-flame))] font-semibold mt-2 text-lg">0172 751897</p>
+          </a>
         </div>
       </section>
 
