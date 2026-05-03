@@ -248,11 +248,6 @@ const Index = () => {
             </article>
           ))}
         </div>
-        <div className="text-center mt-8">
-          <a href="https://share.google/I9qRJA0KxlTSNjVqA" target="_blank" rel="noopener" className="inline-flex items-center gap-2 text-sm text-foreground/60 hover:text-[hsl(var(--brand-flame))] transition">
-            Leggi tutte le recensioni su Google →
-          </a>
-        </div>
       </section>
 
       {/* CONTACT */}
@@ -282,7 +277,15 @@ const Index = () => {
             <div className="rounded-2xl p-6 border border-white/10">
               <Clock className="w-7 h-7 text-[hsl(var(--brand-flame))]" />
               <h3 className="font-[Bebas_Neue] text-2xl mt-3">Orari</h3>
-              <p className="text-foreground/70 mt-2 text-sm">Aperto fino alle 22:00<br />Chiama per conferma</p>
+              <ul className="text-foreground/70 mt-2 text-sm space-y-1">
+                <li className="flex justify-between"><span>Domenica</span><span>18:00 – 22:00</span></li>
+                <li className="flex justify-between text-foreground/40"><span>Lunedì</span><span>Chiuso</span></li>
+                <li className="flex justify-between text-foreground/40"><span>Martedì</span><span>Chiuso</span></li>
+                <li className="flex justify-between"><span>Mercoledì</span><span>18:00 – 22:00</span></li>
+                <li className="flex justify-between"><span>Giovedì</span><span>18:00 – 22:00</span></li>
+                <li className="flex justify-between"><span>Venerdì</span><span>18:00 – 22:00</span></li>
+                <li className="flex justify-between"><span>Sabato</span><span>18:00 – 22:00</span></li>
+              </ul>
             </div>
             <a href="tel:+390172751897" className="sm:col-span-2 rounded-2xl p-6 border border-[hsl(var(--brand-flame))]/40 hover:border-[hsl(var(--brand-flame))] transition block group" style={{ background: "linear-gradient(135deg, hsl(var(--brand-charcoal)), hsl(0 0% 8%))" }}>
               <div className="flex items-center gap-4">
@@ -310,7 +313,6 @@ const Index = () => {
           </div>
           <div className="flex gap-4">
             <a href="https://www.facebook.com/p/PIZZA-38-100063764610552/" target="_blank" rel="noopener" aria-label="Facebook" className="hover:text-[hsl(var(--brand-flame))] transition"><Facebook /></a>
-            <a href="#" aria-label="Instagram" className="hover:text-[hsl(var(--brand-flame))] transition"><Instagram /></a>
           </div>
           <p className="text-sm text-foreground/50">© {new Date().getFullYear()} Pizza 38 — Pizzeria artigianale</p>
         </div>
