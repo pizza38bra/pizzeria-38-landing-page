@@ -3,38 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza 38 &middot; Pizzeria Artigianale a Bra</title>
+    <title>Pizza 38 Bra | Pizzeria Artigianale e Pizza d'Asporto</title>
     <meta
       name="description"
-      content="Pizza 38 è la pizzeria artigianale a Bra: forno a legna, mozzarella di bufala DOP, ingredienti locali e impasti a lunga lievitazione."
+      content="Pizza 38 a Bra: pizza artigianale cotta nel forno a legna, ingredienti selezionati e impasti a lunga lievitazione. Scopri il menu e chiamaci."
     />
     <meta name="author" content="Pizza 38" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#121212" />
-    <link rel="canonical" href="https://www.pizza38bra.it/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#232323" />
+    <link rel="canonical" href="https://pizza38.it/" />
 
-    <meta property="og:title" content="Pizza 38 &middot; Pizzeria Artigianale a Bra" />
-    <meta property="og:description" content="Forno a legna, ingredienti selezionati e tradizione piemontese nel cuore di Bra." />
+    <meta property="og:title" content="Pizza 38 Bra | Pizzeria Artigianale e Pizza d'Asporto" />
+    <meta property="og:description" content="Pizza artigianale al forno a legna a Bra, con ingredienti selezionati e impasti a lunga lievitazione. Scopri il menu di Pizza 38." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:url" content="https://pizza38.it/" />
+    <meta property="og:site_name" content="Pizza 38" />
+    <meta property="og:image" content="https://pizza38.it/images/social-preview.png" />
+    <meta property="og:image:secure_url" content="https://pizza38.it/images/social-preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Logo di Pizza 38, pizzeria artigianale a Bra" />
     <meta property="og:locale" content="it_IT" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pizza 38 &middot; Pizzeria Artigianale a Bra" />
-    <meta name="twitter:description" content="Forno a legna, ingredienti selezionati e tradizione piemontese." />
-    <meta name="twitter:image" content="images/logo.png" />
+    <meta name="twitter:title" content="Pizza 38 Bra | Pizzeria Artigianale e Pizza d'Asporto" />
+    <meta name="twitter:description" content="Pizza artigianale al forno a legna a Bra, con ingredienti selezionati e impasti a lunga lievitazione." />
+    <meta name="twitter:image" content="https://pizza38.it/images/social-preview.png" />
+    <meta name="twitter:image:alt" content="Logo di Pizza 38, pizzeria artigianale a Bra" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" href="icons/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="icons/favicon-32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="icons/favicon-16.png" sizes="16x16" />
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="icons/favicon-48.png" sizes="48x48" />
+    <link rel="icon" type="image/png" href="icons/favicon-96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" sizes="180x180" />
     <link rel="manifest" href="manifest.json" />
+    <meta name="msapplication-TileColor" content="#232323" />
+    <meta name="msapplication-TileImage" content="icons/mstile-150.png" />
     <link rel="preload" as="image" href="images/oven.jpg" />
     <link rel="stylesheet" href="styles.css" />
 
@@ -42,10 +48,26 @@
       {
         "@context": "https://schema.org",
         "@type": "Restaurant",
+        "@id": "https://pizza38.it/#restaurant",
         "name": "Pizza 38",
-        "servesCuisine": "Pizza",
-        "telephone": "+390172751897",
-        "image": "images/logo.png",
+        "legalName": "Pacile Carmine",
+        "description": "Pizzeria artigianale a Bra con forno a legna, ingredienti selezionati e impasti a lunga lievitazione.",
+        "url": "https://pizza38.it/",
+        "logo": "https://pizza38.it/images/logo.png",
+        "image": [
+          "https://pizza38.it/images/pizza-formaggi.jpg",
+          "https://pizza38.it/images/storefront.jpg",
+          "https://pizza38.it/images/social-preview.png"
+        ],
+        "email": "info@pizza38.it",
+        "telephone": ["+390172751897", "+393713315184"],
+        "vatID": "IT03484120047",
+        "priceRange": "€",
+        "currenciesAccepted": "EUR",
+        "servesCuisine": ["Pizza", "Cucina italiana"],
+        "menu": "https://pizza38.it/#menu",
+        "hasMap": "https://www.google.com/maps/place/Pizza38/@44.6972814,7.838594,17z",
+        "sameAs": ["https://www.facebook.com/p/PIZZA-38-100063764610552/"],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Viale Industria, 52",
@@ -54,6 +76,11 @@
           "addressRegion": "CN",
           "addressCountry": "IT"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.6972814,
+          "longitude": 7.838594
+        },
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -61,8 +88,7 @@
             "opens": "18:00",
             "closes": "22:00"
           }
-        ],
-        "priceRange": "€"
+        ]
       }
     </script>
   </head>
@@ -108,7 +134,7 @@
       <div class="site-container nav-shell">
         <a href="#home" class="brand-link" aria-label="Pizza 38 - torna alla home">
           <span class="brand-mark">
-            <img src="images/logo.png" alt="Pizza 38 logo" width="861" height="934" />
+            <img src="images/logo.png" alt="Logo Pizza 38" width="1254" height="1254" />
           </span>
           <span class="brand-name">PIZZA 38</span>
         </a>
@@ -137,7 +163,7 @@
     <main>
       <section id="home" class="hero-section">
         <div class="hero-bg" aria-hidden="true">
-          <img src="images/oven.jpg" alt="" width="1536" height="1024" />
+          <img src="images/oven.jpg" alt="" width="1536" height="1024" fetchpriority="high" />
           <span class="hero-gradient"></span>
           <span class="radial-flame"></span>
         </div>
@@ -189,7 +215,7 @@
           <div class="hero-logo-wrap">
             <div class="hero-logo-glow" aria-hidden="true"></div>
             <div class="hero-logo">
-              <img src="images/logo.png" alt="Pizza 38" width="861" height="934" />
+              <img src="images/logo.png" alt="Pizza 38" width="1254" height="1254" />
             </div>
           </div>
         </div>
@@ -246,52 +272,54 @@
 
           <h3 class="menu-group-title">LE ROSSE</h3>
           <div class="menu-grid">
-            <article class="menu-item"><span>01</span><div><header><h4>Marinara</h4><strong>&euro; 4,00</strong></header><p>pomodoro, olio, origano</p></div></article>
-            <article class="menu-item"><span>02</span><div><header><h4>Margherita</h4><strong>&euro; 5,50</strong></header><p>pomodoro, mozzarella, olio, basilico</p></div></article>
-            <article class="menu-item"><span>03</span><div><header><h4>Napoli</h4><strong>&euro; 6,50</strong></header><p>pomodoro, mozzarella, acciughe, capperi</p></div></article>
-            <article class="menu-item"><span>04</span><div><header><h4>Prosciutto</h4><strong>&euro; 7,00</strong></header><p>pomodoro, mozzarella, prosciutto cotto</p></div></article>
-            <article class="menu-item"><span>05</span><div><header><h4>Prosciutto e Funghi</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, prosciutto cotto, funghi</p></div></article>
-            <article class="menu-item"><span>06</span><div><header><h4>Wurstel</h4><strong>&euro; 7,00</strong></header><p>pomodoro, mozzarella, wurstel</p></div></article>
-            <article class="menu-item"><span>07</span><div><header><h4>Ananas</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, prosciutto cotto, ananas</p></div></article>
-            <article class="menu-item"><span>08</span><div><header><h4>Bufala</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella di bufala DOP, basilico</p></div></article>
-            <article class="menu-item"><span>09</span><div><header><h4>Capricciosa</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, prosciutto, funghi, carciofi, olive</p></div></article>
-            <article class="menu-item"><span>10</span><div><header><h4>Quattro Stagioni</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, olive, carciofi, funghi, prosciutto</p></div></article>
-            <article class="menu-item"><span>11</span><div><header><h4>Quattro Formaggi</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, fontina, gorgonzola, grana</p></div></article>
-            <article class="menu-item"><span>12</span><div><header><h4>Gorgo e Cipolla</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, gorgonzola, cipolla</p></div></article>
-            <article class="menu-item"><span>13</span><div><header><h4>Gorgo e Noci</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, gorgonzola, noci</p></div></article>
-            <article class="menu-item"><span>14</span><div><header><h4>Bra</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, salsiccia di Bra, scaglie di grana</p></div></article>
-            <article class="menu-item"><span>15</span><div><header><h4>Peperoni e Salsiccia</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, peperoni, salsiccia</p></div></article>
-            <article class="menu-item"><span>16</span><div><header><h4>Diavola</h4><strong>&euro; 7,00</strong></header><p>pomodoro, mozzarella, salame piccante</p></div></article>
-            <article class="menu-item"><span>17</span><div><header><h4>Frutti di Mare</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, frutti di mare misti</p></div></article>
-            <article class="menu-item"><span>18</span><div><header><h4>Stracchino e Rucola</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, stracchino, rucola (fuori cottura)</p></div></article>
-            <article class="menu-item"><span>19</span><div><header><h4>Speck e Brie</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, brie, speck (fuori cottura)</p></div></article>
-            <article class="menu-item"><span>20</span><div><header><h4>Burrata</h4><strong>&euro; 9,50</strong></header><p>pomodoro, mozzarella, burrata, prosciutto crudo (fuori cottura)</p></div></article>
-            <article class="menu-item"><span>21</span><div><header><h4>Primavera</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, verdure di stagione</p></div></article>
-            <article class="menu-item"><span>22</span><div><header><h4>Vegetariana</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, verdure miste, peperoni</p></div></article>
-            <article class="menu-item"><span>23</span><div><header><h4>San Daniele</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, prosciutto crudo San Daniele, grana</p></div></article>
-            <article class="menu-item"><span>24</span><div><header><h4>Fiarelli</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, friarielli, salsiccia di Bra</p></div></article>
-            <article class="menu-item"><span>25</span><div><header><h4>Fum&egrave;</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, scamorza affumicata, speck</p></div></article>
-            <article class="menu-item"><span>26</span><div><header><h4>Gustosa</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, salsiccia, cipolla</p></div></article>
-            <article class="menu-item"><span>27</span><div><header><h4>Siciliana</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, melanzane, ricotta</p></div></article>
-            <article class="menu-item"><span>28</span><div><header><h4>Pugliese</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, cime di rapa, salsiccia</p></div></article>
-            <article class="menu-item"><span>29</span><div><header><h4>Piemontese</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, salsiccia di Bra, fonduta</p></div></article>
-            <article class="menu-item"><span>30</span><div><header><h4>Tonno e Cipolla</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, tonno, cipolla</p></div></article>
-            <article class="menu-item"><span>31</span><div><header><h4>Porchetta</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella di bufala, salsiccia piccante, friarielli, peperoni</p></div></article>
-            <article class="menu-item"><span>32</span><div><header><h4>Bismark</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, prosciutto cotto, uovo</p></div></article>
+            <article class="menu-item"><span>01</span><div><header><h4>Marinara</h4><strong>&euro; 5,00</strong></header><p>pomodoro, olio, origano</p></div></article>
+            <article class="menu-item"><span>02</span><div><header><h4>Margherita</h4><strong>&euro; 6,00</strong></header><p>pomodoro, mozzarella, olio, basilico</p></div></article>
+            <article class="menu-item"><span>03</span><div><header><h4>Napoli</h4><strong>&euro; 7,00</strong></header><p>pomodoro, mozzarella, olio, acciughe</p></div></article>
+            <article class="menu-item"><span>04</span><div><header><h4>Prosciutto</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, olio, prosciutto cotto</p></div></article>
+            <article class="menu-item"><span>05</span><div><header><h4>Prosciutto e Funghi</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, olio, prosciutto cotto, funghi</p></div></article>
+            <article class="menu-item"><span>06</span><div><header><h4>Wurstel</h4><strong>&euro; 7,00</strong></header><p>pomodoro, mozzarella, olio, wurstel</p></div></article>
+            <article class="menu-item"><span>07</span><div><header><h4>Americana</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, olio, patatine</p></div></article>
+            <article class="menu-item"><span>08</span><div><header><h4>Bufala</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella di bufala, olio, basilico</p></div></article>
+            <article class="menu-item"><span>09</span><div><header><h4>Capricciosa</h4><strong>&euro; 9,00</strong></header><p>pomodoro, mozzarella, olio, funghi, carciofi, salamino piccante, prosciutto cotto, olive</p></div></article>
+            <article class="menu-item"><span>10</span><div><header><h4>Quattro Stagioni</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, olio, carciofi, funghi, prosciutto cotto, olive</p></div></article>
+            <article class="menu-item"><span>11</span><div><header><h4>Quattro Formaggi</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, olio, fontina, gorgonzola, grana</p></div></article>
+            <article class="menu-item"><span>12</span><div><header><h4>Gorgo e Cipolla</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, olio, gorgonzola, cipolla</p></div></article>
+            <article class="menu-item"><span>13</span><div><header><h4>Gorgo e Noci</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, olio, gorgo, noci (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>14</span><div><header><h4>Bra</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, olio, salsiccia di Bra</p></div></article>
+            <article class="menu-item"><span>15</span><div><header><h4>Peperoni e Salsiccia</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, olio, peperoni, salsiccia di Bra</p></div></article>
+            <article class="menu-item"><span>16</span><div><header><h4>Diavolina</h4><strong>&euro; 7,00</strong></header><p>pomodoro, mozzarella, olio, salamino piccante</p></div></article>
+            <article class="menu-item"><span>17</span><div><header><h4>Calabrese</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, olio, &rsquo;nduja di Spilinga, cipolla</p></div></article>
+            <article class="menu-item"><span>18</span><div><header><h4>Frutti di Mare</h4><strong>&euro; 9,00</strong></header><p>pomodoro, mozzarella, olio, frutti di mare</p></div></article>
+            <article class="menu-item"><span>19</span><div><header><h4>Stracchino e Rucola</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, olio, stracchino, rucola (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>20</span><div><header><h4>Speck e Brie</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, olio, brie, speck (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>21</span><div><header><h4>Burrata</h4><strong>&euro; 9,50</strong></header><p>pomodoro, mozzarella, olio, burrata (fuori cottura), prosciutto crudo (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>22</span><div><header><h4>Primavera</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, olio, rucola (fuori cottura), pomodorini (fuori cottura), scaglie di grana (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>23</span><div><header><h4>Vegetariana</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, olio, melanzane, zucchine, peperoni</p></div></article>
+            <article class="menu-item"><span>24</span><div><header><h4>San Daniele</h4><strong>&euro; 9,00</strong></header><p>pomodoro, mozzarella, prosciutto crudo (fuori cottura), rucola (fuori cottura), scaglie di grana (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>25</span><div><header><h4>Friarielli</h4><strong>&euro; 8,50</strong></header><p>pomodoro, mozzarella, olio, friarielli, salsiccia di Bra</p></div></article>
+            <article class="menu-item"><span>26</span><div><header><h4>Fum&egrave;</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, olio, scamorza affumicata, pancetta (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>27</span><div><header><h4>Gustosa</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, olio, scamorza affumicata, salsiccia di Bra</p></div></article>
+            <article class="menu-item"><span>28</span><div><header><h4>Siciliana</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, olio, olive, capperi, acciughe</p></div></article>
+            <article class="menu-item"><span>29</span><div><header><h4>Pugliese</h4><strong>&euro; 7,00</strong></header><p>pomodoro, mozzarella, olio, cipolla</p></div></article>
+            <article class="menu-item"><span>30</span><div><header><h4>Piemontese</h4><strong>&euro; 7,50</strong></header><p>pomodoro, mozzarella, olio, peperoni, acciughe</p></div></article>
+            <article class="menu-item"><span>31</span><div><header><h4>Tonno e Cipolla</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, olio, tonno, cipolla</p></div></article>
+            <article class="menu-item"><span>32</span><div><header><h4>Porcellina</h4><strong>&euro; 9,50</strong></header><p>pomodoro, mozzarella di bufala, salamino piccante, funghi, peperoni</p></div></article>
+            <article class="menu-item"><span>33</span><div><header><h4>Bismark</h4><strong>&euro; 8,00</strong></header><p>pomodoro, mozzarella, olio, prosciutto cotto, uovo</p></div></article>
           </div>
 
           <h3 class="menu-group-title menu-group-title-spaced">LE BIANCHE</h3>
           <div class="menu-grid">
-            <article class="menu-item"><span>33</span><div><header><h4>Paesana</h4><strong>&euro; 7,00</strong></header><p>mozzarella, olio, salsiccia, cipolla</p></div></article>
-            <article class="menu-item"><span>34</span><div><header><h4>Biancaneve</h4><strong>&euro; 8,00</strong></header><p>mozzarella, panna, prosciutto cotto, funghi</p></div></article>
-            <article class="menu-item"><span>35</span><div><header><h4>Estiva</h4><strong>&euro; 7,50</strong></header><p>mozzarella, pomodorini, rucola (fuori cottura)</p></div></article>
-            <article class="menu-item"><span>36</span><div><header><h4>Rustica</h4><strong>&euro; 8,00</strong></header><p>mozzarella, salsiccia, friarielli (fuori cottura)</p></div></article>
-            <article class="menu-item"><span>37</span><div><header><h4>Funghi Porcini</h4><strong>&euro; 10,00</strong></header><p>mozzarella di bufala, olio, funghi porcini, salsiccia di Bra</p></div></article>
+            <article class="menu-item"><span>34</span><div><header><h4>Paesana</h4><strong>&euro; 8,00</strong></header><p>mozzarella, olio, acciughe, cipolla, olive, origano, pomodorini freschi (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>35</span><div><header><h4>Biancaneve</h4><strong>&euro; 6,00</strong></header><p>mozzarella, olio, origano</p></div></article>
+            <article class="menu-item"><span>36</span><div><header><h4>Estiva</h4><strong>&euro; 8,00</strong></header><p>mozzarella, olio, pomodorini freschi (fuori cottura), rucola (fuori cottura)</p></div></article>
+            <article class="menu-item"><span>37</span><div><header><h4>Rustica</h4><strong>&euro; 8,50</strong></header><p>mozzarella, olio, patate, salsiccia di Bra, rosmarino</p></div></article>
+            <article class="menu-item"><span>38</span><div><header><h4>Funghi Porcini</h4><strong>&euro; 10,00</strong></header><p>mozzarella di bufala, olio, funghi porcini, salsiccia di Bra</p></div></article>
           </div>
 
           <p class="menu-note">
-            Ogni rinforzo di ingredienti &euro; 0,50 &middot; Frutti di mare &euro; 1,50 &middot; Pizze baby riduzione &euro; 0,50<br />
-            Il prezzo varia in base all'ingrediente richiesto
+            Ogni rinforzo di ingredienti &euro; 0,50 &middot; Per frutti di mare &euro; 1,50<br />
+            Per le variazioni di ingredienti il prezzo varia in base all'ingrediente richiesto<br />
+            Pizze baby: riduzione &euro; 0,50
           </p>
         </div>
       </section>
@@ -311,8 +339,8 @@
               <svg class="icon"><use href="#icon-star"></use></svg>
               <svg class="icon"><use href="#icon-star"></use></svg>
             </div>
-            <p>&quot;Pizza veramente ottima, cotta bene e con ingredienti freschi. Bravi!&quot;</p>
-            <strong>&mdash; Roberto Panizzolo</strong>
+            <p>&quot;Pizza davvero buona, con ingredienti freschi. Sempre gentilissimi e puntuali nelle consegne, prezzi onesti: la numero uno per l'asporto!&quot;</p>
+            <strong>&mdash; erica simondi</strong>
           </article>
           <article class="review-card">
             <svg class="icon quote-icon"><use href="#icon-quote"></use></svg>
@@ -323,8 +351,8 @@
               <svg class="icon"><use href="#icon-star"></use></svg>
               <svg class="icon"><use href="#icon-star"></use></svg>
             </div>
-            <p>&quot;Pizza buona, personale gentile e prezzi giusti. Da consigliare!&quot;</p>
-            <strong>&mdash; Cristina R.</strong>
+            <p>&quot;Pizze ottime, persone gentilissime che gestiscono l'attivit&agrave; con amore e cura.&quot;</p>
+            <strong>&mdash; cartasasergi</strong>
           </article>
           <article class="review-card">
             <svg class="icon quote-icon"><use href="#icon-quote"></use></svg>
@@ -335,7 +363,7 @@
               <svg class="icon"><use href="#icon-star"></use></svg>
               <svg class="icon"><use href="#icon-star"></use></svg>
             </div>
-            <p>&quot;Una delle migliori pizze d'asporto di Bra. Impasto leggero e digeribile.&quot;</p>
+            <p>&quot;La pizza &egrave; davvero buonissima e preparata con ingredienti di qualit&agrave;. Il servizio &egrave; cordiale e puntuale, cosa non da poco. Consigliatissima!&quot;</p>
             <strong>&mdash; Valeria Milanesio</strong>
           </article>
         </div>
@@ -348,17 +376,25 @@
         </div>
 
         <div class="contact-grid">
-          <div class="map-frame animate-glow-pulse">
-            <iframe
-              title="Pizza 38 - Mappa"
-              src="https://www.google.com/maps?q=Pizza+38+Viale+Industria+52+Bra+CN&output=embed"
+          <a
+            class="map-frame animate-glow-pulse"
+            href="https://www.google.com/maps/place/Pizza38/@44.6972814,7.8360137,739m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12d2ab08a4ac3659:0x68c634ce9d218374!8m2!3d44.6972814!4d7.838594!16s%2Fg%2F11f3tt4trg?entry=ttu&amp;g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            aria-label="Apri le indicazioni Google Maps per Pizza 38"
+          >
+            <img
+              src="images/map-pizza38.png"
+              alt="Mappa con la posizione di Pizza 38 in Viale Industria 52 a Bra"
+              width="551"
+              height="414"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+            />
+            <span class="map-action">Apri le indicazioni</span>
+          </a>
 
           <div class="contact-cards">
-            <a href="https://maps.app.goo.gl/n2YxMxurGBbLcXw38" target="_blank" rel="noopener" class="contact-card">
+            <a href="https://www.google.com/maps/place/Pizza38/@44.6972814,7.8360137,739m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12d2ab08a4ac3659:0x68c634ce9d218374!8m2!3d44.6972814!4d7.838594!16s%2Fg%2F11f3tt4trg?entry=ttu&amp;g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="contact-card">
               <svg class="icon card-icon"><use href="#icon-map-pin"></use></svg>
               <h3>Dove siamo</h3>
               <p>Viale Industria, 52<br />12042 Bra (CN)</p>
@@ -387,25 +423,57 @@
                 <strong>0172 751897</strong>
               </span>
             </a>
+            <a href="tel:+393713315184" class="contact-card phone-card">
+              <span class="phone-badge"><svg class="icon"><use href="#icon-phone"></use></svg></span>
+              <span>
+                <h3>Chiama ora per la tua pizza</h3>
+                <strong>371 331 5184</strong>
+              </span>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="site-container footer-inner">
-        <div class="footer-brand">
-          <span class="footer-mark">
-            <img src="images/logo.png" alt="" width="861" height="934" loading="lazy" />
-          </span>
-          <span>PIZZA 38 &middot; BRA</span>
-        </div>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/p/PIZZA-38-100063764610552/" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg class="icon"><use href="#icon-facebook"></use></svg>
+      <div class="site-container footer-grid">
+        <div class="footer-brand-column">
+          <a class="footer-brand" href="#home" aria-label="Pizza 38 - torna alla home">
+            <span class="footer-mark">
+              <img src="images/logo.png" alt="" width="1254" height="1254" loading="lazy" />
+            </span>
+            <span>PIZZA 38</span>
           </a>
+          <p>Pizzeria artigianale da asporto, Bra.</p>
         </div>
-        <p>&copy; <span data-current-year>2026</span> Pizza 38 &mdash; Pizzeria artigianale</p>
+
+        <div class="footer-column">
+          <h2>Contatti</h2>
+          <a href="tel:+390172751897">0172 751897</a>
+          <p>info@pizza38.it</p>
+          <a href="https://www.facebook.com/p/PIZZA-38-100063764610552/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Locale</h2>
+          <p>Viale Industria, 52<br />12042 Bra (CN)</p>
+          <p>Mercoled&igrave; - Domenica<br />18:00 - 22:00</p>
+          <p>Luned&igrave; e marted&igrave; chiuso</p>
+        </div>
+
+        <div class="footer-legal-column">
+          <h2>Dati legali</h2>
+          <p><span>Ragione sociale</span>Pacile Carmine</p>
+          <p><span>P.IVA</span>03484120047</p>
+          <p><span>Sede legale</span>Viale Industria, 32<br />12042 Bra (CN)</p>
+          <p><span>Mail</span>info@pizza38.it</p>
+        </div>
+      </div>
+
+      <div class="site-container footer-bottom">
+        <p>&copy; <span data-current-year>2026</span> Pacile Carmine. Tutti i diritti riservati.</p>
+        <a href="privacy.html">Privacy policy</a>
+        <p class="footer-credit">realized by <a href="mailto:simatwebstudio@gmail.com">Simatwebstudio</a></p>
       </div>
     </footer>
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.pizza38bra.it/sitemap.xml
+Sitemap: https://pizza38.it/sitemap.xml

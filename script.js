@@ -150,10 +150,53 @@ function initCurrentYear() {
   }
 }
 
+function initLegalLanguage() {
+  const buttons = document.querySelectorAll("[data-lang-button]");
+
+  if (!buttons.length) return;
+
+  const panels = document.querySelectorAll("[data-lang-panel]");
+  const legalContent = document.querySelector(".legal-content");
+  const description = document.querySelector('meta[name="description"]');
+
+  const setLanguage = (language) => {
+    const isEnglish = language === "en";
+
+    document.documentElement.lang = language;
+    document.body.dataset.legalLang = language;
+    document.title = isEnglish ? "Privacy Notice | Pizza 38 Bra" : "Privacy Policy | Pizza 38 Bra";
+
+    if (description) {
+      description.content = isEnglish
+        ? "Pizza 38 privacy notice: GitHub Pages hosting, no cookies or trackers, external links and data subject rights."
+        : "Informativa sul trattamento dei dati personali del sito Pizza 38: hosting GitHub Pages, assenza di cookie e tracciatori, collegamenti esterni e diritti degli interessati.";
+    }
+
+    if (legalContent) {
+      legalContent.setAttribute("aria-label", isEnglish ? "Privacy notice content" : "Contenuto dell'informativa privacy");
+    }
+
+    panels.forEach((panel) => {
+      panel.hidden = panel.dataset.langPanel !== language;
+    });
+
+    buttons.forEach((button) => {
+      const isActive = button.dataset.langButton === language;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => setLanguage(button.dataset.langButton));
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initHeader();
   updateOpeningStatus();
   initCurrentYear();
+  initLegalLanguage();
 
   window.setInterval(updateOpeningStatus, 60 * 1000);
 });
